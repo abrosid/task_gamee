@@ -1,7 +1,7 @@
 # task_gamee
 
 
-## Description
+## Úkol
 
 Zadáním je vytvořit API endpoint pro ukládání score ze hry a endpoint pro zobrazení prvních 10 hráčů pro konkrétní hru určenou v parametrech requestu.
 
