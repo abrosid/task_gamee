@@ -40,9 +40,9 @@ Bonusové body:
 
 Please, use <a href="https://www.getpostman.com/" target="_blank">Postman</a> to send JsonRPC requests and get preview of responses.
 
-Connection to <a href="https://redis.io/" target="_blank">Redis</a> server is required.
+Connection to <a href="https://redis.io/" target="_blank">Redis</a> server is required. The connection to Redis server must be able thrue `tcp://10.0.0.1:6379`, because Predis/Client is configured by defualt. Configuration to another `host:port` is not proggrammed in this project.   
 
-PHP client <a href="https://github.com/nrk/predis" target="_blank">Predis</a> is used to handle connection to Redis server.
+PHP client <a href="https://github.com/nrk/predis" target="_blank">Predis</a> is used to handle connection to Redis server. 
 
 
 ## Instalation guide
