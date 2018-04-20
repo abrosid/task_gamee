@@ -52,13 +52,13 @@ Clone from this repo and run in cli, inside project folder: `composer install`
 
 Create folders named `log` and `temp` inside the project's root folder and set the previligues to write and read if required.
 
-Configure `app\config\config.neon` and 'app\config\config.local.neon' files if required (these files are preconfigured by default).
+Configure `app\config\config.neon` and `app\config\config.local.neon` files if required (these files are preconfigured by default).
 
 Open browser, run project url and follow the displyed info.
 
 
 ## TODO
 
-    - napsat `docker-compose up`\
+    - napsat `docker-compose up`
     
     - aplikace nastartovat na předem daném portu
