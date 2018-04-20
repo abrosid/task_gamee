@@ -1,4 +1,7 @@
 # task_gamee
+---------------------------------
+
+## Description
 
 Zadáním je vytvořit API endpoint pro ukládání score ze hry a endpoint pro zobrazení prvních 10 hráčů pro konkrétní hru určenou v parametrech requestu.
 
@@ -31,3 +34,17 @@ Bonusové body:
     - Usery mají pro stejné skóre stejný rank/pozici
     
     - vyklonovat git repo
+
+## Usage and prerequests
+
+Please, use <a href="https://www.getpostman.com/" target="_blank">Postman</a> to send JsonRPC requests and get preview of responses.
+
+Connection to <a href="https://redis.io/" target="_blank">Redis</a> server is required.
+
+PHP client <a href="https://github.com/nrk/predis" target="_blank">Predis</a> is used to handle connection to Redis server.
+
+## TODO
+
+    - napsat `docker-compose up`\
+    
+    - aplikace nastartovat na předem daném portu
