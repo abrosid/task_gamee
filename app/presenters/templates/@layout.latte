@@ -3,27 +3,18 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-
-	<title>{ifset title}{include title|stripHtml} | {/ifset}Nette Web</title>
+        <base href="{$basePath}">
+	<title>Task Gamee</title>
         <script type="text/javascript">
             const basePath={$basePath};
         </script>
-        
-        
 </head>
-
 <body>
 	<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
-
 	{include content}
-
 	{block scripts}
-        
-        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://nette.github.io/resources/js/netteForms.min.js"></script>
-        <script src="{$basePath}/js/jquery.jsonrpc.js" type="text/javascript"></script>
-        <script src="{$basePath}/js/main.js" type="text/javascript"></script>
+	<script src="{$basePath}/js/func.js" type="text/javascript"></script>
 	{/block}
 </body>
 </html>
