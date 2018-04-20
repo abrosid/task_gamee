@@ -1,4 +1,7 @@
 parameters:
+	redis: 
+		parameters: 'tcp://127.0.0.1:6379'
+		options: null
 
 
 application:
@@ -14,8 +17,9 @@ session:
 services:
 	router: App\RouterFactory::createRouter
 
-	- \Predis\Client
+	- \Predis\Client(%redis.parameters%, %redis.options%)
 	- \Predis\Autoloader
+	- Model\PredisBase
 	- Model\JsonRPC\JsonrpcService
 	- Model\JsonRPC\ScoreRepository
 	- Model\JsonRPC\ErrorJsonRPC

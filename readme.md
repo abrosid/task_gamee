@@ -44,8 +44,6 @@ Connection to <a href="https://redis.io/" target="_blank">Redis</a> server is re
 
 PHP client <a href="https://github.com/nrk/predis" target="_blank">Predis</a> is used to handle connection to Redis server. 
 
-The connection to Redis server must be able over the `tcp://10.0.0.1:6379`, because Predis/Client is configured by defualt. Configuration to another `host:port` is not programmed in this project. 
-
 
 ## Instalation guide
 
@@ -54,7 +52,7 @@ Clone from this repo and run in cli, inside project folder: `composer install`
 
 Create folders named `log` and `temp` inside the project's root folder and set the previligues to write and read if required.
 
-Configure `app\config\config.neon` and `app\config\config.local.neon` files if required (these files are preconfigured by default).
+Configure `app\config\config.neon` and `app\config\config.local.neon` files to connect to Redis server if required (these files are preconfigured by default).
 
 Open browser, run project url and follow the displyed info.
 
